@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail PDF</title>
+  </head>
+  <body style="padding: 50px; font-family: Helvetica, sans-serif">
+    <main>
+      <div style="display: flex; justify-content: space-between">
+        <div class="left">
+          <img
+            style="width: 190px; height: 50px"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1034"
+            src="https://ci5.googleusercontent.com/proxy/emZWMYLuYfZj51UoMcg_gk83sgVDkQZjczEfFyO5W52c7Js_GF1fJWPpwS_AzStLuGpS_WPLjwVNdRcEZed1FeB_WKJLeyaJt44wLUR9eEP_hiJOT8IVSJ4=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/logo1.png"
+            alt="Thank you for trusting us to help you find a solution"
+            class="CToWUd"
+            data-bit="iit"
+          />
+        </div>
+        <div class="right">
+          <img
+            style="width: 230px; height: 70px"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1033"
+            src="https://ci4.googleusercontent.com/proxy/BaH-YHhoIsKeX7eqvbbHetFTXWiYCqmnij66Kl6fOuOgwZw9TBq1byKFWvDxfsZ7LF9t-yOYcYKflPNetmlkrxqYGMjh6L_5kzUAj1O6zzWwuCPxOGkbRlIsCw=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/Graphic.png"
+            alt="Thank you for trusting us to help you find a solution"
+            class="CToWUd"
+            data-bit="iit"
+          />
+        </div>
+      </div>
+      <div
+        style="
+          text-align: center;
+          margin-top: 40px;
+          border-bottom: 2px solid rgb(247, 77, 0);
+          padding: 10px;
+        "
+      >
+        <label
+          style="font-size: 16px; color: rgb(88, 88, 88); font-weight: 600"
+        >
+          TEST EFFORT CALCULATOR
+        </label>
+      </div>
+      <div style="text-align: center; margin-top: 30px">
+        <label for="" style="color: rgb(247, 77, 0); font-size: 14px"
+          >Greetings from Testbytes!</label
+        >
+      </div>
+      <div class="msg" style="margin-top: 20px">
+        <label for="" style="font-size: 12px; color: black">Dear <%=fpc_user_name%>,</label>
+        <p
+          style="
+            font-size: 12px;
+            color: rgb(152, 150, 150);
+            padding-left: 30px;
+            line-height: 20px;
+          "
+        >
+          Thank you for using our cost estimation calculator. The estimated
+          amount and required time frame for testing your software has been
+          attached to this mail. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Mollitia fugiat amet ullam vel quibusdam temporibus
+          laboriosam fuga voluptate sit consequatur quo laudantium, cupiditate
+          earum? Fuga ullam optio quas nostrum tenetur!
+        </p>
+      </div>
+      <div>
+        <table style="width: 100%">
+          <tr>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >SPECIFICATIONS</span
+              >
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >USER PREFERENCES</span
+              >
+            </th>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Domain</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                ><%=dis_category%>
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >No Of Screens</span
+              >
+            </td>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=no_of_screens%></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >No Of External Interface</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=no_ext_interface_text%> </span>
+            </td>
+          </tr>
+
+          <% if(typeof kind_of_testing !== "undefined"){ %>
+
+            <tr>
+              <td style="padding: 3px 0; text-align: center">
+                <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                  >Testing type</span
+                >
+              </td>
+              <td style="padding: 3px 0; text-align: center">
+                <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                  ><%=dis_kind%></span
+                >
+              </td>
+            </tr>
+
+          <% } %>  
+
+          <tr>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Platforms</span
+              >
+            </td>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                ><%=dis_platfrom%></span
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >How Complex</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                ><%=complex_text%>
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >No Of Cycles</span
+              >
+            </td>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=no_of_cycles%></span>
+            </td>
+          </tr>
+          <tr>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >No Of Test Cases</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=testcases%> </span>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="text-align: center; margin: 20px 0">
+        <label
+          for=""
+          style="font-size: 14px; font-weight: 600; color: rgb(88, 88, 88)"
+          >Test Preparation Effort</label
+        >
+      </div>
+
+      <div>
+        <table style="width: 100%">
+          <tr>
+            <td
+              style="
+                width: 50%;
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Test Case/Scenario Preparation Effort (in hrs)</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                ><%=tot_efforts_in_hr%>
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Test Environment Setup (in hrs)</span
+              >
+            </td>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=test_env_setup%></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Test Data Preparation (in hrs)</span
+              >
+            </td>
+            <td
+              style="
+                padding: 3px 0;
+                text-align: center;
+                background-color: rgb(239, 239, 239);
+              "
+            >
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=test_data_preparation%></span>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"
+                >Test Configuration Setup (in hrs)</span
+              >
+            </td>
+            <td style="padding: 3px 0; text-align: center">
+              <span style="font-size: 12px; color: rgb(97, 97, 97)"><%=test_config_setup%></span>
+            </td>
+          </tr>
+
+          <tr>
+            <th style="padding: 3px 0; background-color: rgb(239, 77, 48)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Total Test Preparation Effort (in hrs)</span
+              >
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(239, 77, 48)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                ><%=tot_test_preparation_effort%></span
+              >
+            </th>
+          </tr>
+        </table>
+      </div>
+
+      <div style="text-align: center; margin: 20px 0">
+        <label
+          for=""
+          style="font-size: 14px; font-weight: 600; color: rgb(88, 88, 88)"
+          >Test Execution Effort</label
+        >
+      </div>
+
+      <div>
+        <table style="width: 100%">
+          <tr>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Cycles</span
+              >
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Test Preparation Effort (in hrs)</span
+              >
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Total effort for Test Execution (in hrs)
+              </span>
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Total effort for Defect Reporting (in hrs)</span
+              >
+            </th>
+            <th style="padding: 3px 0; background-color: rgb(247, 77, 0)">
+              <span style="font-size: 12px; font-weight: 600; color: white"
+                >Retesting of Testcase Failed(in hrs)</span
+              >
+            </th>
+          </tr>
+
+          <% for (let i=1; i<= no_of_cycles+1 ; i++) { %>
+
+            <tr>
+              <td style="padding: 3px 0; <%=no_of_cycles+1 == i ? 'background-color: rgb(239, 77, 48); text-align: center;' : 'text-align: center;' %>">
+                <span style="font-size: 12px; <%=no_of_cycles+1 == i ? 'font-weight: 600; color: white;' : 'color: rgb(97, 97, 97);' %>"><%=no_of_cycles+1 == i ? "Total" : i%></span>
+              </td>
+              <td style="padding: 3px 0; <%=no_of_cycles+1 == i ? 'background-color: rgb(239, 77, 48); text-align: center;' : 'text-align: center;' %>">
+                <span style="font-size: 12px; <%=no_of_cycles+1 == i ? 'font-weight: 600; color: white;' : 'color: rgb(97, 97, 97);' %>"><%=no_of_cycles+1 == i ? col_prepare : prepare_for_each_cycle%></span>
+              </td>
+              <td style="padding: 3px 0; <%=no_of_cycles+1 == i ? 'background-color: rgb(239, 77, 48); text-align: center;' : 'text-align: center;' %>">
+                <span style="font-size: 12px; <%=no_of_cycles+1 == i ? 'font-weight: 600; color: white;' : 'color: rgb(97, 97, 97);' %>"><%=no_of_cycles+1 == i ? col_tot_exe : eval("final_total_effort_text_excution_cyc"+i)%></span>
+              </td>
+              <td style="padding: 3px 0; <%=no_of_cycles+1 == i ? 'background-color: rgb(239, 77, 48); text-align: center;' : 'text-align: center;' %>">
+                <span style="font-size: 12px; <%=no_of_cycles+1 == i ? 'font-weight: 600; color: white;' : 'color: rgb(97, 97, 97);' %>"><%=no_of_cycles+1 == i ? col_tot_defect : eval("final_defect_reporting_cyc"+i)%></span>
+              </td>
+              <td style="padding: 3px 0; <%=no_of_cycles+1 == i ? 'background-color: rgb(239, 77, 48); text-align: center;' : 'text-align: center;' %>">
+                <span style="font-size: 12px; <%=no_of_cycles+1 == i ? 'font-weight: 600; color: white;' : 'color: rgb(97, 97, 97);' %>"><%=no_of_cycles+1 == i ? col_tot_retest : eval("final_retesting_cyc"+i)%></span>
+              </td>
+            </tr>
+
+          <% } %>
+
+        </table>
+      </div>
+
+      <div style="margin: 40px 0 100px 0; display: flex; justify-content: flex-end">
+        <div
+          style="
+            width: 30%;
+            border-top: 2px solid rgb(247, 77, 0);
+            border-bottom: 2px solid rgb(247, 77, 0);
+            border-left: 2px solid rgb(247, 77, 0);
+            border-style: solid none solid solid;
+            padding: 15px 20px;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+            background-color: rgb(236, 236, 236);
+            font-size: 16px;
+            color: black;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+          "
+        >
+          <label for=""> TIMELINE &nbsp; <%=timeline_value%> Month (approx.) </label>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 40px;">
+        <p style="color: rgb(88, 88, 88); font-size: 16px">TOTAL AMOUNT IS</p>
+        <div>
+          <label
+            for=""
+            style="margin-top: 40px; font-size: 40px; color: rgb(45, 156, 0)"
+            ><%=mail_currency_sym ? mail_currency_sym : cost_range%></label
+          >
+          <span
+            style="color: rgb(88, 88, 88); font-size: 16px; margin-left: 5px"
+            >&nbsp; <%=mail_currency_sym ? total_cost_mail_currency_sym : mail_currency%></span
+          >
+        </div>
+      </div>
+      <p
+        style="
+          color: rgb(88, 88, 88);
+          font-size: 14px;
+          text-align: center;
+          margin: 25px 0;
+        "
+      >
+        *We are showcasing cost range because, variation can happen with respect
+        to employee experience and resource used for the project)
+      </p>
+      <div style="text-align: center">
+        <p style="color: rgb(88, 88, 88); font-size: 16px">TOTAL EFFORT IS</p>
+        <div>
+          <label
+            for=""
+            style="margin-top: 40px; font-size: 40px; color: rgb(45, 156, 0)"
+            ><%=total_effort_mail%></label
+          >
+          <span
+            style="color: rgb(88, 88, 88); font-size: 16px; margin-left: 5px"
+            >Hrs.</span
+          >
+        </div>
+      </div>
+      <p
+        style="
+          color: rgb(88, 88, 88);
+          font-size: 14px;
+          text-align: center;
+          margin: 25px 0;
+        "
+      >
+        If you have any query regarding the estimation feel free to contact us
+        at
+      </p>
+
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          margin-top: 50px;
+          margin-bottom: 15px;
+        "
+      >
+        <div class="left" style="display: flex; align-items: center">
+          <img
+            width="30"
+            height="30"
+            style="width: 0.3166in; height: 0.3166in"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1032"
+            src="https://ci4.googleusercontent.com/proxy/rTxUNvn7cbz-Rj7nWqCrv96x04JU2nrqh2iHHxS_1yiHzHk_NRGEjIbCKiwyteUX8-4G1Fknvsp7L0nO-4Ni0hl1XluRjXeXv8qCgU9myVuVIkrAlbBBPLIvKqNaYMWG=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/web_mail_icn.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+          <a
+            style="font-size: 16px"
+            href="http://www.testbytes.net"
+            target="_blank"
+            data-saferedirecturl="https://www.google.com/url?q=http://www.testbytes.net&amp;source=gmail&amp;ust=1672212037546000&amp;usg=AOvVaw36cLqA9ywZ88ihiHvTeF7o"
+            >www.testbytes.net</a
+          >
+        </div>
+
+        <div class="left" style="display: flex; align-items: center">
+          <img
+            width="30"
+            height="30"
+            style="width: 0.3166in; height: 0.3166in"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1031"
+            src="https://ci3.googleusercontent.com/proxy/DhA1mNyUQnD0bl9VHZk74vPnVVEt2fY6C1C-ZLbuDmsMH0Bwf-4v_qgXemHy3380lEWwKgOpyeFRjXL7bse95PhTRktVVz5uzNXQChuNOHhGTolRkj_S-qwH2CDO68dU2qI=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/phone_mail_icn.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+          <span style="font-size: 16px">+1 929 552 0053</span>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          margin-bottom: 30px;
+        "
+      >
+        <div class="left" style="display: flex; align-items: center">
+          <img
+            width="30"
+            height="30"
+            style="width: 0.3166in; height: 0.3166in"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1030"
+            src="https://ci5.googleusercontent.com/proxy/rUKl-P6KwcrQnbtVAS0yZr--1saMx3hoZYKlAt2YQvAXGM99dN46vKMKL-aGpP9txeK5Fo9k5NfGl2ABpYv9N7i0vm16I4jdexVZes83tE2ssZwFaX6nmOWUVPymF7RW=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/whatsapp_icn.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+          <span style="font-size: 16px">+91 8113 865000</span>
+        </div>
+
+        <div class="left" style="display: flex; align-items: center">
+          <img
+            width="30"
+            height="30"
+            style="width: 0.3166in; height: 0.3166in"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1029"
+            src="https://ci5.googleusercontent.com/proxy/NT8J6rnaoA0wRr-5nPQhPbmQomj3HD-xfNDj3AzSOJHJK-qebysL5OcDVXPo-rI_l-KHDcsW9k0lAIzoyeb5ne7JY2jG-Zio47TZQmvMCSPP-kuCJ08QUAQ=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/skype.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+          <a
+            style="font-size: 16px"
+            href="http://url5742.testbytes.net/ls/click?upn=loGnWJr1fQPnD9yD8RjKnfXAEIN9hW0xhMVl3qnOA7U-3D7lF1_AzHlMOSH-2FnNBC1rNQC9i4ilXfapLCYxoKkQkaqjf29Eeaanib7JI4TFfuBQxGXezvkLr-2B-2Bvnd23WIVzzL-2BVFuuJmDj6oW9iGH-2F-2FBZfAU08-2BTQ4Xnw103VLcLsL3mN3gL0-2BUjcGVV6wDG0ZRChCW33NhNE-2FDXP86LQ5p7gQluY6OFmxUsCzSaMuyEWrw9MEH5JLwKYEXqe-2FzZcWpdPXGp-2BPgN9TQK-2BrkQH5N1UlNjB4JgIAj4XCeJcCij-2FSiCPqA1Ja3DYjD9md24NMgh6si8QRZdYjN-2FYHc6Y7oRBUMUUlLXiht2gWLnr3a584upU6EL"
+            target="_blank"
+            data-saferedirecturl="https://www.google.com/url?q=http://url5742.testbytes.net/ls/click?upn%3DloGnWJr1fQPnD9yD8RjKnfXAEIN9hW0xhMVl3qnOA7U-3D7lF1_AzHlMOSH-2FnNBC1rNQC9i4ilXfapLCYxoKkQkaqjf29Eeaanib7JI4TFfuBQxGXezvkLr-2B-2Bvnd23WIVzzL-2BVFuuJmDj6oW9iGH-2F-2FBZfAU08-2BTQ4Xnw103VLcLsL3mN3gL0-2BUjcGVV6wDG0ZRChCW33NhNE-2FDXP86LQ5p7gQluY6OFmxUsCzSaMuyEWrw9MEH5JLwKYEXqe-2FzZcWpdPXGp-2BPgN9TQK-2BrkQH5N1UlNjB4JgIAj4XCeJcCij-2FSiCPqA1Ja3DYjD9md24NMgh6si8QRZdYjN-2FYHc6Y7oRBUMUUlLXiht2gWLnr3a584upU6EL&amp;source=gmail&amp;ust=1672212037546000&amp;usg=AOvVaw3csDOQV1C7k93KoX65xjp3"
+          >
+            live:vishnu_457
+          </a>
+        </div>
+      </div>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 50px;
+        "
+      >
+        <span style="margin-right: 15px; font-size: 18px"
+          >We are now 90K+ on</span
+        >
+        <img
+          width="143"
+          height="35"
+          style="width: 1.4916in; height: 0.3666in"
+          id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1028"
+          src="https://ci4.googleusercontent.com/proxy/bhYYjQW-lTypWNEY0UtJ24DBoUuSEDr4BnOYz3sN87D34W2UlnjfJ2PKASErn1ahhZ90swiF0vdMA_PadZWYKmU_9X-ilKpKOtSqAw_1cdWuQTr1HzRHGs8WdK4OHaw16g=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/mail_linkedin.png"
+          class="CToWUd"
+          data-bit="iit"
+        />
+      </div>
+
+      <div style="text-align: center; margin-top: 30px">
+        <a
+          href="http://url5742.testbytes.net/ls/click?upn=loGnWJr1fQPnD9yD8RjKnTsq9PiX5515dFzh5UPFeu-2B8LcFPaH9VoIhbZWULMQvk7zAZ6mYIT1RbgwjMnZ6OwQ-3D-3D9QgB_AzHlMOSH-2FnNBC1rNQC9i4ilXfapLCYxoKkQkaqjf29Eeaanib7JI4TFfuBQxGXezvkLr-2B-2Bvnd23WIVzzL-2BVFuuJmDj6oW9iGH-2F-2FBZfAU08-2BTQ4Xnw103VLcLsL3mN3gL0-2BUjcGVV6wDG0ZRChCW33NhNE-2FDXP86LQ5p7gQluY6P9G3vPOcjha7eDS-2FnqnhSuTikgrGJCpMxxMR4Za3gkFfTe20Wig9CVcmouPzgomtNkOX5OmATQBAigsnLbDrDL-2BSW1Wg45FCJwXesS2Nj4Fgfdv9rAe0JuSrws1xC5dyUqRNJfPGw8Fv-2BaLuniTcBX"
+          target="_blank"
+          data-saferedirecturl="https://www.google.com/url?q=http://url5742.testbytes.net/ls/click?upn%3DloGnWJr1fQPnD9yD8RjKnTsq9PiX5515dFzh5UPFeu-2B8LcFPaH9VoIhbZWULMQvk7zAZ6mYIT1RbgwjMnZ6OwQ-3D-3D9QgB_AzHlMOSH-2FnNBC1rNQC9i4ilXfapLCYxoKkQkaqjf29Eeaanib7JI4TFfuBQxGXezvkLr-2B-2Bvnd23WIVzzL-2BVFuuJmDj6oW9iGH-2F-2FBZfAU08-2BTQ4Xnw103VLcLsL3mN3gL0-2BUjcGVV6wDG0ZRChCW33NhNE-2FDXP86LQ5p7gQluY6P9G3vPOcjha7eDS-2FnqnhSuTikgrGJCpMxxMR4Za3gkFfTe20Wig9CVcmouPzgomtNkOX5OmATQBAigsnLbDrDL-2BSW1Wg45FCJwXesS2Nj4Fgfdv9rAe0JuSrws1xC5dyUqRNJfPGw8Fv-2BaLuniTcBX&amp;source=gmail&amp;ust=1672212037546000&amp;usg=AOvVaw1cQSuO351f_VSxrFirsCSM"
+          style="
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            background-color: rgb(239, 77, 48);
+            padding: 4px 15px;
+            text-decoration: underline;
+          "
+          >JOIN US</a
+        >
+      </div>
+      <div style="margin-top: 30px">
+        <span style="font-size: 16px; color: rgb(247, 77, 0)">DISCLAIMER</span>
+        <p
+          style="font-size: 14px; color: rgb(152, 150, 150); padding-left: 30px"
+        >
+          The estimation included in the mail has been possible as a result of
+          predictive analysis and complex algorithm execution. Slight changes
+          are a possibility.
+        </p>
+        <p
+          style="
+            font-size: 12px;
+            color: rgb(247, 77, 0);
+            font-style: italic;
+            margin-top: 20px;
+            padding-left: 30px;
+          "
+        >
+          Note: This email is generated from Test Effort Calculator page -
+          Testbytes
+        </p>
+      </div>
+
+      <div
+        style="
+          margin-top: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div>
+          <img
+            width="282"
+            height="90"
+            style="
+              width: 2.9416in;
+              height: 0.9416in;
+              font-family: Helvetica, sans-serif;
+            "
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1027"
+            src="https://ci4.googleusercontent.com/proxy/BaH-YHhoIsKeX7eqvbbHetFTXWiYCqmnij66Kl6fOuOgwZw9TBq1byKFWvDxfsZ7LF9t-yOYcYKflPNetmlkrxqYGMjh6L_5kzUAj1O6zzWwuCPxOGkbRlIsCw=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/Graphic.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+        </div>
+        <div style="display: flex; align-items: center">
+          <span
+            style="
+              font-size: 11.5pt;
+              color: rgb(99, 98, 98);
+              text-align: right;
+              margin-right: 10px;
+            "
+            >125/2,Sainiketan Colony, Kalas road,<br />
+            Vishrantwadi, Pune,<br />
+            Maharashtra-411015
+          </span>
+          <img
+            width="30"
+            height="30"
+            style="width: 0.3166in; height: 0.3166in"
+            id="m_9106619471498996572m_-1034667192529631220m_1956512803590543179_x0000_i1026"
+            src="https://ci6.googleusercontent.com/proxy/BsMti-MwgsAluOvfhRNTq25dERydXCIJ4J7EdLqH2CxDcRjXz-pwbC4qZFZk3k-r74UyS1aH_lnaTHtREjn34LiZYsq7GPLnnk68r_D7RGCKgzcU9gdZucP7WNs=s0-d-e1-ft#https://www.testbytes.net/wp-content/themes/testbytes/images/location.png"
+            class="CToWUd"
+            data-bit="iit"
+          />
+        </div>
+      </div>
+
+      <div
+        style="
+          border-bottom: 2px solid rgb(204, 204, 204);
+          text-align: center;
+          margin-top: 20px;
+        "
+      ></div>
+    </main>
+  </body>
+</html>

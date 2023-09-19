@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json res - status</title>
+  </head>
+  <body>
+    <p style="color: #159a15; font-size: 18px;" > <%=mail_response%> </p>
+    <p style="color: #159a15; font-size: 18px">
+      Details you entered has been submitted successfully. Please refer below
+      for results.
+    </p>
+    <table
+      class="table"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      style="width: 100%"
+      id="cust_det"
+    >
+      <tbody>
+        <tr>
+          <td style="padding: 10px; border: none">
+            <table
+              class="table"
+              width="100%"
+              border="0"
+              cellpadding="0"
+              cellspacing="0"
+              style="border: 1px solid rgb(238, 234, 234)"
+            >
+              <tbody>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Domain
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=dis_category%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    No Of Screens
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=no_of_screens%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    No Of External Interface
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=no_ext_interface_text%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Platforms
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=dis_platfrom%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    How Complex
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=complex_text%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    No Of Cycles
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=no_of_cycles%>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    No Of Test Cases
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=testcases%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    colspan="2"
+                    align="center"
+                    style="
+                      padding: 20px 30px;
+                      font-size: 12px;
+                      font-weight: 500;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-weight: bold;
+                        font-size: 22px;
+                        color: #616161;
+                        padding: 14px 0;
+                        margin: 0;
+                      "
+                    >
+                      Test Preparation Effort
+                    </h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Test Case/Scenario Preparation effort (in hrs)
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=tot_efforts_in_hr%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Test Environment Setup (in hrs)
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=test_env_setup%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Test Data Preparation (in hrs)
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=test_data_preparation%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#ffffff"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Test Configuration Setup (in hrs)
+                  </td>
+                  <td
+                    bgcolor="#ffffff"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  >
+                    <%=test_config_setup%>
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    bgcolor="#dcdcdc"
+                    style="
+                      padding: 15px;
+                      border-right: 1px solid #eeeaea;
+                      width: 50%;
+                      color: #060606;
+                      font-weight: 700;
+                    "
+                  >
+                    Test Configuration Setup (in hrs)
+                  </td>
+                  <td
+                    bgcolor="#dcdcdc"
+                    style="padding: 15px; width: 50%; color: #f74d00"
+                  ><%=tot_test_preparation_effort%>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            align="center"
+            style="
+              padding: 20px 30px;
+              font-size: 12px;
+              font-weight: 500;
+              border: none;
+            "
+          >
+            <h3
+              style="
+                font-weight: bold;
+                font-size: 22px;
+                color: #616161;
+                padding: 14px 0;
+                margin: 0;
+              "
+            >
+              Test Execution Effort
+            </h3>
+          </td>
+        </tr>
+        <tr>
+            <td style="border: none">
+                <table class="table" style="border: 1px solid rgb(238, 234, 234);">
+                    <thead>
+                      <tr bgcolor="#dcdcdc">
+                        <th style="vertical-align:middle;text-align: center;">Cycle</th>
+                        <th style="vertical-align:middle;text-align: center;">Total Effort for Defect Reporting (in hrs)</th>
+                        <th style="vertical-align:middle;text-align: center;">Total effort for Test Execution (in hrs)</th>
+                        <th style="vertical-align:middle;text-align: center;">Retesting of Test Case failed (in hrs)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+            
+                        <!-- -----------------Dynamic rows of cycles and one additional Total row----------------- -->
+                        <% for (let i=1; i<= no_of_cycles+1 ; i++) { %>
+                            <tr <%=no_of_cycles+1 == i ? 'bgcolor="#dcdcdc' : '' %> >
+                                <td style="border-right:1px solid rgb(221, 221, 221);text-align: center;"><%=no_of_cycles+1 == i ? "Total" : i%></td>
+                                <td style="border-right:1px solid rgb(221, 221, 221);text-align: center;"><%=no_of_cycles+1 == i ? col_tot_defect : eval("final_defect_reporting_cyc"+i)%></td>
+                                <td style="border-right:1px solid rgb(221, 221, 221);text-align: center;"><%=no_of_cycles+1 == i ? col_tot_exe : eval("final_total_effort_text_excution_cyc"+i)%></td>
+                                <td style="text-align: center;"><%=no_of_cycles+1 == i ? col_tot_retest : eval("final_retesting_cyc"+i)%></td>
+                            </tr>
+                        <% } %>
+            
+            
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="border: none">
+            <table style="width: 100%">
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td
+                    align="right"
+                    style="
+                      float: right;
+                      background: #ececec;
+                      border-bottom-left-radius: 50px;
+                      border-top-left-radius: 50px;
+                      padding: 12px;
+                      border: 1px solid #d5312d;
+                      border-right: none;
+                    "
+                  >
+                    <h2
+                      style="
+                        margin: 10px 0px;
+                        font-weight: 100;
+                        font-size: 22px;
+                        color: #000000;
+                        padding: 0px 16px;
+                      "
+                    >
+                      TIMELINE &nbsp;
+                      <b style="color: #000000; font-weight: 500"
+                        ><%=timeline_value%> Month (approx.)</b
+                      >
+                    </h2>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" style="border: none">&nbsp;</td>
+        </tr>
+
+        <tr>
+          <td
+            colspan="2"
+            align="center"
+            style="
+              padding: 15px 27px 0px;
+              font-size: 12px;
+              font-weight: 500;
+              border: none;
+            "
+          >
+            <h2
+              style="
+                font-weight: 500;
+                font-size: 20px;
+                color: #585858;
+                margin: 10px 3px 0px;
+              "
+            >
+              APPROX. COST IS
+            </h2>
+          </td>
+        </tr>
+
+        <tr>
+          <td
+            colspan="2"
+            align="center"
+            style="padding: 0px 100px; font-weight: 500; border: none"
+          >
+          <h2
+          align="center"
+          style="margin: 0in; text-align: center"
+        >
+          <span
+            style="
+              font-size: 37.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(45, 156, 0);
+            "
+            ><%=mail_currency_sym ? mail_currency_sym : cost_range%></span
+          ><span
+            style="
+              font-size: 14.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(88, 88, 88);
+            "
+            >&nbsp; <%=mail_currency_sym ? total_cost_mail_currency_sym : mail_currency%></span
+          ><span
+            style="
+              font-size: 37.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(45, 156, 0);
+            "
+            ><u style="font-family: Helvetica, sans-serif"></u
+            ><u style="font-family: Helvetica, sans-serif"></u
+          ></span>
+        </h2>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            align="center"
+            style="
+              padding: 15px 27px 0px;
+              font-size: 12px;
+              font-weight: 500;
+              border: none;
+            "
+          >
+            <h2
+              style="
+                font-weight: 500;
+                font-size: 20px;
+                color: #585858;
+                margin: 10px 3px 0px;
+              "
+            >
+              GRAND TOTAL EFFORT IS
+            </h2>
+          </td>
+        </tr>
+
+        <tr>
+          <td
+            colspan="2"
+            align="center"
+            style="padding: 0px 100px; font-weight: 500; border: none"
+          >
+          <h2
+          align="center"
+          style="margin: 0in; text-align: center"
+        >
+          <span
+            style="
+              font-size: 37.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(45, 156, 0);
+            "
+            ><%=total_effort_mail%> </span
+          ><span
+            style="
+              font-size: 14.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(88, 88, 88);
+            "
+            >&nbsp; Hrs.</span
+          ><span
+            style="
+              font-size: 37.5pt;
+              font-family: Helvetica, sans-serif;
+              font-weight: normal;
+              color: rgb(45, 156, 0);
+            "
+            ><u style="font-family: Helvetica, sans-serif"></u
+            ><u style="font-family: Helvetica, sans-serif"></u
+          ></span>
+        </h2>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    ';
+  </body>
+</html>
