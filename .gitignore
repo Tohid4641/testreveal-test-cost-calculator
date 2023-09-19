@@ -1,4 +1,5 @@
 /node_modules
-config.env
-/db/mysql/createPool.js
+/public
 /cache
+/db
+config.env
