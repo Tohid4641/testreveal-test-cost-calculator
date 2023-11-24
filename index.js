@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express()
 const bodyParser = require("body-parser");
-const router = require("./routes/api-routes");
+const mainRoutes = require("./routes/routes");
 const dotenv = require("dotenv");
 const morgan = require("morgan");
 const cors = require('cors')
@@ -27,7 +27,7 @@ app.use(cors());
 app.use('/api/public',express.static('public'));
 
 // Routes
-app.use("/api", router);
+app.use('/api', mainRoutes)
 
 // Error Handling
 app.use((err, req, res, next) => {
